@@ -5,48 +5,48 @@ import Timeline from "../elements/Timeline";
 const educationData = [
   {
     id: 1,
-    title: "Acamedic Degree",
-    years: "2019 - Present",
+    title: "Mid-Level Software Developer",
+    years: "2021 - 2022",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "Afrinict limited.",
   },
   {
     id: 2,
-    title: "Bachelor’s Degree",
-    years: "2017 - 2013",
+    title: "Software Engineer",
+    years: "2020 - 2021",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "Ellani Software Solution.",
   },
   {
     id: 3,
-    title: "Honours Degree",
-    years: "2013 - 2009",
+    title: "Fullstack Developer",
+    years: "2019 - 2020",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "Chrome Softek.",
   },
 ];
 
 const experienceData = [
   {
     id: 1,
-    title: "Web Designer",
-    years: "2019 - Present",
+    title: "Wordpress Developer",
+    years: "2018 - 2019",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "Acemedix Academy .",
   },
   {
     id: 2,
-    title: "Front-End Developer",
-    years: "2017 - 2013",
+    title: "Wordpress Developer",
+    years: "2017 - 2018",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "TMR Concept.",
   },
   {
     id: 3,
-    title: "Back-End Developer",
-    years: "2013 - 2009",
+    title: "Front-End/Customer Support",
+    years: "2016 - 2017",
     content:
-      "Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.",
+      "Moji Software Limited.",
   },
 ];
 
@@ -57,7 +57,7 @@ function Experiences() {
         <Pagetitle title="Experience" />
         <div className="row">
           <div className="col-md-6">
-            <div className="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+            <div className="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
               {educationData.map((education) => (
                 <Timeline key={education.id} education={education} />
               ))}

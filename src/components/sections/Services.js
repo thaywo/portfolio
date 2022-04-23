@@ -9,25 +9,25 @@ const servicesData = [
     icon: "images/service-1.svg",
     title: "UI/UX design",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "Do you have any UI/UX Project? Come, let me create a digital products with unique idea for you.",
     color: "#6C6CE5",
     contentColor: "light",
   },
   {
     id: 2,
     icon: "images/service-2.svg",
-    title: "Web Development",
+    title: "Software/Web Dev",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "Do you have an idea up there? come, let's transform it into reality, by building a wow project for you.",
     color: "#F9D74C",
     contentColor: "dark",
   },
   {
     id: 3,
     icon: "images/service-3.svg",
-    title: "Photography",
+    title: "SEO/Socila Media",
     content:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "Is your brand getting the proper notice? come, let me give you that brand awareness, and go viral.",
     color: "#F97B8B",
     contentColor: "light",
   },

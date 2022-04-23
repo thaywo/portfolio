@@ -7,7 +7,7 @@ import CV from '../elements/Taiwo Hassan CV.pdf';
 
 const aboutContent = {
   name: "Taiwo",
-  avatarImage: "/images/avatar-2.svg",
+  avatarImage: "/images/avatar-2.png",
   content:
     "I am Taiwo Hassan, A diligent software developer, with a cyber security background of 4 years of experience in developing full-stack web and mobile application services in a variety of domains and tech stacks. Technically strong in Laravel, CodeIgniter, Javascript, WordPress, ReactJS, Vue.js, SQL, & PHP.  Eager to build innovative and cutting-edge software solutions for an impressive suite of clients within its global reach..",
 };
@@ -15,20 +15,20 @@ const aboutContent = {
 const progressData = [
   {
     id: 1,
-    title: "Development",
+    title: "JavaScript  - React JS - Vue JS",
     percantage: 85,
     progressColor: "#FFD15C",
   },
   {
     id: 2,
-    title: "UI/UX Design",
-    percantage: 70,
+    title: "PHP - Laravel - CodeIgniter - WordPress ",
+    percantage: 80,
     progressColor: "#FF4C60",
   },
   {
     id: 3,
-    title: "Photography",
-    percantage: 60,
+    title: "SQL - UI Design - Linux (Kali)",
+    percantage: 80,
     progressColor: "#6C6CE5",
   },
 ];
@@ -37,25 +37,25 @@ const counterData = [
   {
     id: 1,
     title: "Projects completed",
-    count: 198,
+    count: 29 ,
     icon: "icon-fire",
   },
   {
     id: 2,
     title: "Cup of coffee",
-    count: 5670,
+    count: 25,
     icon: "icon-cup",
   },
   {
     id: 3,
     title: "Satisfied clients",
-    count: 427,
+    count: 15 ,
     icon: "icon-people",
   },
   {
     id: 4,
-    title: "Nominees winner",
-    count: 35,
+    title: "Recomendations",
+    count: 13 ,
     icon: "icon-badge",
   },
 ];
@@ -77,7 +77,7 @@ function About() {
             <div className="rounded bg-white shadow-dark padding-30">
               <div className="row">
                 <div className="col-md-6">
-                  <p>{aboutContent.content}</p>
+                  <p style={{textAlign: 'justify'}}>{aboutContent.content}</p>
                   <div className="mt-3">
                     <a href={CV} className="btn btn-default" download >
                       Download CV
