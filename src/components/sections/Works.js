@@ -10,126 +10,96 @@ const filters = [
   },
   {
     id: 2,
-    text: "creative",
+    text: "laravel with touch of reactjs",
   },
   {
     id: 3,
-    text: "art",
+    text: "reactjs",
   },
-  {
-    id: 4,
-    text: "design",
-  },
-  {
-    id: 5,
-    text: "branding",
-  },
+ 
 ];
 
 const allData = [
   {
     id: 1,
-    title: "Project Managment Illustration",
-    category: "art",
-    image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
+    title: "Sales Management System",
+    category: "laravel with touch of reactjs",
+    image: "images/works/chrome.png",
+    popupLink: [
+      "images/works/chrome.png",
+      "images/works/chrome1.png",
+      "images/works/chrome2.png",
+    ],
   },
   {
     id: 2,
-    title: "Guest App Walkthrough Screens",
-    category: "creative",
-    image: "images/works/2.svg",
+    title: "Hospital Managent System ",
+    category: "laravel with touch of reactjs",
+    image: "images/works/clinic.png",
     popupLink: [
-      "images/works/2.svg",
-      "images/works/5.svg",
-      "images/works/6.svg",
+      "images/works/clinic.png"
     ],
   },
   {
     id: 3,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/3.svg",
-    popupLink: ["https://www.youtube.com/watch?v=qf9z4ulfmYw"],
-  },
-  {
-    id: 4,
-    title: "Onboarding Motivation",
-    category: "creative",
-    image: "images/works/4.svg",
+    title: "Enterprise Resources Planning",
+    category: "laravel with touch of reactjs",
+    image: "images/works/erp.png",
     popupLink: [
-      "https://www.youtube.com/watch?v=URVHRhBSjj8",
-      "https://www.youtube.com/watch?v=qf9z4ulfmYw",
+      "images/works/erp.png",
+      "images/works/erp1.png",
     ],
   },
   {
+    id: 4,
+    title: "Asset Management System",
+    category: "laravel with touch of reactjs",
+    image: "images/works/ass.png",
+    popupLink: [
+      "images/works/ass.png",
+      "images/works/ass1.png",
+      ],
+  },
+  {
     id: 5,
-    title: "iMac Mockup Design",
-    category: "art",
-    image: "images/works/5.svg",
-    popupLink: ["images/works/5.svg"],
+    title: "Learning Management System",
+    category: "reactjs",
+    image: "images/works/lms.png",
+    popupLink: [
+      "images/works/lms.png",
+      "images/works/lms1.png",
+    ],
   },
   {
     id: 6,
-    title: "Game Store App Concept",
-    category: "design",
-    image: "images/works/6.svg",
-    link: "https://dribbble.com",
+    title: "Gueue Management System",
+    category: "laravel with touch of reactjs",
+    image: "images/works/qeueu.png",
+    popupLink: [
+      "images/works/qeueu.png",
+      "images/works/queue1.png",
+    ],
   },
   {
     id: 7,
-    title: "Project Managment Illustration",
-    category: "art",
-    image: "images/works/3.svg",
-    link: "https://pinterest.com",
+    title: "Real Estate Fronted-ReactJS",
+    category: "reactjs",
+    image: "images/works/estate.png",
+    link: "https://github.com/thaywo/Real-Estate-Frontend-with-ReactJS.git",
   },
   {
     id: 8,
-    title: "Guest App Walkthrough Screens",
-    category: "design",
-    image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
+    title: "Revenue Management System",
+    category: "reactjs",
+    image: "images/works/occe.png",
+    link: "https://github.com/thaywo/OCCE.git",
   },
-  {
-    id: 9,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/4.svg",
-    popupLink: ["images/works/4.svg"],
-  },
-  {
-    id: 10,
-    title: "Game Store App Concept",
-    category: "design",
-    image: "images/works/6.svg",
-    link: "https://dribbble.com",
-  },
-  {
-    id: 11,
-    title: "Project Managment Illustration",
-    category: "art",
-    image: "images/works/3.svg",
-    link: "https://pinterest.com",
-  },
-  {
-    id: 12,
-    title: "Guest App Walkthrough Screens",
-    category: "design",
-    image: "images/works/1.svg",
-    popupLink: ["images/works/1.svg"],
-  },
-  {
-    id: 13,
-    title: "Delivery App Wireframe",
-    category: "branding",
-    image: "images/works/4.svg",
-    popupLink: ["images/works/4.svg"],
-  },
+  
 ];
 
 function Works() {
   const [getAllItems] = useState(allData);
-  const [dataVisibleCount, setDataVisibleCount] = useState(6);
+  const [dataVisibleCount, setDataVisibleCount] = useState(9);
   const [dataIncrement] = useState(3);
   const [activeFilter, setActiveFilter] = useState("");
   const [visibleItems, setVisibleItems] = useState([]);
@@ -137,7 +107,7 @@ function Works() {
 
   useEffect(() => {
     setActiveFilter(filters[0].text.toLowerCase());
-    setVisibleItems(getAllItems.filter((item) => item.id <= 6));
+    setVisibleItems(getAllItems.filter((item) => item.id <= 9));
   }, [getAllItems]);
 
   const handleChange = (e) => {

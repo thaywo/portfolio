@@ -53,7 +53,7 @@ function Homepage() {
           <Works />
         </Element>
         <Element name="section-pricing">
-          <Pricing />
+          {/* <Pricing /> */}
         </Element>
         <Element name="section-testimoninal">
           <Testimonials />
