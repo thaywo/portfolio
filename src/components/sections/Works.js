@@ -94,6 +94,17 @@ const allData = [
     image: "images/works/occe.png",
     link: "https://github.com/thaywo/OCCE.git",
   },
+  {
+    id: 9,
+    title: "Text Editor/Formater System",
+    category: "reactjs",
+    image: "images/works/t1.png",
+    popupLink: [
+      "images/works/t1.png",
+      "images/works/t2.png",
+    ],
+    link: "https://text-editor-seven.vercel.app/",
+  },
   
 ];
 
