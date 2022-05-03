@@ -40,11 +40,14 @@ function Brandlogos() {
     <div id="branglogos">
       <div className="container">
         <div className="row">
+          <p style={{ margin: '20',  textAlign: 'center'}}> <h1> Tools I have used</h1> </p>
           {brandlogoData.map((brandlogo) => (
             <div className="col-md-3 col-6" key={brandlogo.id}>
               <div className="client-item">
                 <div className="inner">
                   <img src={brandlogo.image} alt="client-name" />
+                  <i class="fa-brands fa-react"></i>
+
                 </div>
               </div>
             </div>

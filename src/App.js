@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import HomepageLight from "./pages/HomepageLight";
@@ -11,10 +11,19 @@ import Homepage3Light from "./pages/Homepage3Light";
 import Homepage3Dark from "./pages/Homepage3Dark";
 import Bloglist from "./pages/Bloglist";
 import BlogDetails from "./pages/BlogDetails";
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 import "./App.scss";
 
 function App() {
+
+  const tawkMessengerRef = useRef();
+
+    const handleMinimize = () => {
+        tawkMessengerRef.current.minimize();
+    };
+  
   return (
+    <>
     <BrowserRouter>
       <Switch>
         <Route path="/" exact>
@@ -48,6 +57,16 @@ function App() {
         <Route path="/blogs/blog-details/:id/:title" component={BlogDetails} />
       </Switch>
     </BrowserRouter>
+
+    <button onClick={handleMinimize}> Minimize the Chat </button>
+
+
+    <TawkMessengerReact
+                propertyId="er4er626a5542b0d10b6f3e6fbd53"
+                widgetId="1sgsgsg6759ylg1nlq3b2"
+                useRef={tawkMessengerRef}/>
+
+    </>
   );
 }
 
