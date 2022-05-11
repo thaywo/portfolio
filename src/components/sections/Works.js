@@ -105,12 +105,19 @@ const allData = [
     ],
     link: "https://text-editor-seven.vercel.app/",
   },
+  {
+    id: 9,
+    title: "Voice to Text Generator",
+    category: "reactjs",
+    image: "images/works/final-v2t.png",
+    link: "https://voice2-text.vercel.app/",
+  },
   
 ];
 
 function Works() {
   const [getAllItems] = useState(allData);
-  const [dataVisibleCount, setDataVisibleCount] = useState(9);
+  const [dataVisibleCount, setDataVisibleCount] = useState(12);
   const [dataIncrement] = useState(3);
   const [activeFilter, setActiveFilter] = useState("");
   const [visibleItems, setVisibleItems] = useState([]);
@@ -118,7 +125,7 @@ function Works() {
 
   useEffect(() => {
     setActiveFilter(filters[0].text.toLowerCase());
-    setVisibleItems(getAllItems.filter((item) => item.id <= 9));
+    setVisibleItems(getAllItems.filter((item) => item.id <= 12));
   }, [getAllItems]);
 
   const handleChange = (e) => {
