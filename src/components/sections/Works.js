@@ -112,6 +112,17 @@ const allData = [
     image: "images/works/final-v2t.png",
     link: "https://voice2-text.vercel.app/",
   },
+  {
+    id: 10,
+    title: "Language Translator",
+    category: "reactjs",
+    image: "images/works/trans1.png",
+    link: "https://language-translator-six.vercel.app/",
+    popupLink: [
+      "images/works/trans1.png",
+      "images/works/trans2.png",
+    ],
+  },
   
 ];
 
